@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Portfolio.html/css/shared.css" />
+    <link rel="stylesheet" href="/Portfolio.html/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio-contact</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <section class="header">
+      <div class="container">
+        <div class="header-section__brend">
+          <img src="/Portfolio.html/css/images/logo.png" alt="logo" />
+        </div>
+        <nav class="navigation">
+          <div class="header-section__menu">
+            <ul class="header-section__items">
+              <li class="header-section__item active">
+                <a href="./index.html"> Home</a>
+              </li>
+              <li class="header-section__item"><a href="#">About</a></li>
+              <li class="header-section__item"><a href="#">Portfolio</a></li>
+              <li class="header-section__item"><a href="#">Pages</a></li>
+              <li class="header-section__item"><a href="#">Blog</a></li>
+              <li class="header-section__item"><a href="#">Contact</a></li>
+              <li class="header-section__item">
+                <a href="./contact.html">Connection</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!--/Header section -->
+
+    <!-- Contact section -->
+    <div class="container">
+      <section class="contact">
+        <div class="section-title">contact me</div>
+        <form action="./server.php" method="GET">
+          <textarea
+            rows="10"
+            placeholder="Enter your message"
+            name="message"
+          ></textarea>
+          <div class="half-row contact__firstname">
+            <input type="text" placeholder="Enter your name" name="firstname" />
+          </div>
+          <div class="half-row contact__email">
+            <input type="email" placeholder="Enter your email" name="email" />
+          </div>
+          <input type="text" placeholder="Letter content" name="subject" />
+          <button class="button contact__send" type="submit">
+            Send message
+          </button>
+        </form>
+      </section>
+    </div>
+    <!-- /Contact section -->
+
+    <!-- Footer section -->
+    <div class="container">
+      <section class="footer" id="footer">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">My Service</a>
+            </li>
+            <li>
+              <a href="#">My Customer</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">My Partners</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    <!-- /Footer section -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

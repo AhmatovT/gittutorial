@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.button {
+  padding: 0.93rem 1.5rem;
+  margin: 1.25rem 2.5rem;
+  background-color: rgb(35, 35, 105);
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #1345eb 0%, #ed239f 51%, #1345eb 100%);
+  background-size: 200%;
+  color: white;
+  cursor: pointer;
+}
+.button:hover {
+  background-position: right center;
+}
+.blur_line {
+  display: inline-block;
+  position: relative;
+  top: -2;
+  margin-left: 0.32rem;
+  width: 80px;
+  height: 4px;
+  background-color: #1a0358;
+  filter: blur(4px);
+  border-radius: 4px;
+}
+.clearfix {
+  clear: both;
+}
+/* Header section */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8faff;
+  box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+  z-index: 10;
+}
+.header-section__brend {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-section__brend img {
+  width: 64px;
+}
+.navigation {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-section__item {
+  display: inline-block;
+  padding: 0.6rem;
+}
+.header-section__item a {
+  color: rgb(43, 117, 214);
+  font-family: var(--Roboto);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.header-section__item a:hover {
+  color: #f878f2;
+}
+.header-section__item.active a {
+  color: #f878f2;
+}
+/* /Header section */
+
+/* Footer section */
+.footer {
+  padding: 3.2rem 0;
+  background-color: #021017;
+  text-align: center;
+  margin-top: 50px;
+}
+.footer__brand img {
+  width: 128px;
+}
+.footer-navigation__items {
+  margin-bottom: 50px;
+}
+.footer-navigation__item {
+  display: inline-block;
+  padding: 0 0.625rem;
+}
+.footer-navigation__item a {
+  color: white;
+  text-decoration: none;
+}
+.footer__social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 36px;
+  color: #05364d;
+  font-size: 16px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.footer__social a {
+  color: #021017;
+}
+.footer__social:hover {
+  background: linear-gradient(90deg, #1345eb 0%, #ed239f 100%);
+}
+.footer__social:hover i {
+  color: white;
+}
+
+.footer-text {
+  color: #797979;
+}
+
+/* media quare */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 96%;
+  }
+  .navigation {
+    display: none;
+  }
+}
